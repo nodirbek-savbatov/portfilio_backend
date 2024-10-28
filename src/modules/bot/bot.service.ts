@@ -130,10 +130,6 @@ You will get information about Nodirbek Savbatov through this bot.`,
 
   async onContact(ctx: Context) {
     try {
-      const filePath = path.join(
-        __dirname,
-        '../../../uploads/services-image.png',
-      );
       await  ctx.editMessageText('Contact department', {
             reply_markup: {
                 inline_keyboard: [[
@@ -143,7 +139,7 @@ You will get information about Nodirbek Savbatov through this bot.`,
                 ],[
                     { text: '🐙 Github', url: "https://github.com/nodirbek-savbatov?tab=repositories"},
                     { text: '💼 Linked in', url: "https://www.linkedin.com/in/nodirbek-savbatov-976aab295/"},
-                    { text: '🔗 Site', url: "http://nodirbek-savbatov.uz" }
+                    { text: '🔗 Site', url: "https://nodirbek-savbatov.uz/" }
                 ],
                 [{ text: '◀️ Back', callback_data: 'back_to_main' }],
             ]
